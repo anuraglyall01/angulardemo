@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file datatype="plaintext" original="ng2.template" source-language="en-US" target-language="de-DE">
+    <body>
+      <trans-unit id="cms.cms_pages" datatype="html">
+        <source> CMS PAGES </source>
+        <target> CMS-SEITEN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/cms/cms.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

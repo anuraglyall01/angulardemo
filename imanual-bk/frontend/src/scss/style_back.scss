@@ -1,0 +1,298 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+@import '~ngx-toastr/toastr';
+
+.app-header .navbar-toggler-icon {
+    visibility: hidden;
+}
+
+.app-header .navbar-toggler{
+    visibility: hidden;
+    // display: none !important;
+}
+.d-md-block.d-none.navbar-toggler{
+    visibility: hidden !important;
+    display: none !important;
+}
+
+
+.sidebar .nav-link .nav-icon {
+    color: #ffffff !important;
+}
+
+
+// .sidebar .nav-link.active .nav-icon {
+//     color: #08b47c !important
+// }
+
+.app-header {
+    background-color: #08b47c !important;
+}
+
+.switch-slider {
+    width: 110px !important;
+}
+
+.switch-slider::before {   
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+.switch-label .switch-slider::after {   
+    width: 100% !important;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #c8ced3 !important;
+    vertical-align: middle !important;
+}
+
+.card-header + div {
+    padding: 0.75rem 1.25rem 0 !important;
+}
+
+.switch-label {
+    margin: 0 0 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.table-bordered td a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #aaa;
+}
+.table-bordered td .fa-pencil {
+    font-size: 16px;
+}
+a.btn-add {
+    float: right;
+    font-size: 20px;
+    color: #aaa;
+}
+
+
+
+.app-header .nav-item .nav-link > .img-avatar, .app-header .nav-item .avatar.nav-link > img {
+    height: 25px;
+}
+
+.img-avatar, .avatar > img, .img-circle {
+    border-radius: 0em;
+}
+
+.switch-label .switch-slider::after {
+    left: 3px;
+}
+
+@media all and (min-width: 992px) {
+    .brand-minimized .app-header .navbar-brand {
+        width: 155px;
+    }
+}
+
+.dg.ac{
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.close-bottom{
+    display: none
+
+}
+
+.main .model-view {
+    padding: 0 ;
+    height: 100vh !important;
+}
+
+.main .container-fluid .left div.modelViewer {
+    height: 100vh !important;
+}
+.right form {
+    padding: 30px;
+}
+.right form .col-md-6 {
+    margin-bottom: 15px;
+}
+.right form label {
+    font-size: 12px;
+    margin: 0 0 5px;
+    display: block;
+    line-height: 1;
+}
+.right button {
+    width: 100%;
+}
+.left canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.tbl-model td:last-child{
+    min-width: 125px;
+}
+
+span.invalid-feedback {
+    visibility: hidden !important;
+}
+
+
+.form-group.remap{
+    position: absolute;
+    right: -270px;
+    top: 68px;
+    width: 700px;
+	}
+.form-group remap label.col-md-2.col-form-label{
+	flex: 0 0 30.666667%;
+    max-width: 18.666667%;
+}
+.card-body .form-group .col-md-2 {
+    flex: 0 0 15%;
+    max-width: 15.666667%;
+}
+a.btn-map {
+    float: right;
+    font-size: 12px !important;
+    color: #fff;
+}
+a.btn-edit {
+    float: left;
+    font-size: 12px !important;
+    color: #fff;
+}
+.card-body .form-group .col-md-4 {
+    flex: 0 0 46.333333%;
+    max-width: 53.333333%;
+}
+
+
+.app-header .navbar-toggler-icon {
+   
+    background-image: url('/assets/img/nav-toggler.svg') !important;
+}
+
+
+.app, app-dashboard, app-root {
+    
+    min-height: auto !important;
+    height: 100% !important;
+}
+.wrapper[_ngcontent-apb-c251] {
+    height: 100vh !important;
+}
+
+
+
+
+
+// GURI
+@media only screen and (max-width:1024px){
+    .switch-slider {
+        width: 71px !important;
+    }
+    .switch-slider::before {
+        width: 14px;
+        height: 14px;
+    }
+    .switch-label .switch-slider::after {
+        font-size: 7px;
+        left: 6px !important;
+    }
+    button.btn.btn-success {
+        margin-bottom: 5px;
+    }
+
+
+}
+
+@media only screen and (max-width:768px){
+    .table-bordered td .btn.btn-success {
+        margin-bottom: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .table-bordered td .btn.btn-danger {
+        margin-bottom: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .wrapper.model-div {
+        height: auto;
+    }
+
+    .d-md-down-none{ 
+        display:block! important;
+    }
+
+    .app-header .navbar-toggler-icon {
+        visibility: visible;
+    }
+    
+    .app-header .navbar-toggler{
+        visibility: visible;
+    }
+
+    div#progressBar img {
+        width: 90px;
+    }
+
+    .model-div {
+        min-width: 433px;
+        overflow-x: scroll;
+    }
+    
+}
+
+
+
+//Anshu
+@media(max-width:767px){
+    // table.table.table-bordered.table-striped.table-sm th:first-child {
+    //     min-width: 43px;
+    // }
+
+    // table.table.table-bordered.table-striped.table-sm th {
+    //     min-width: 107px;
+    // }
+    .cms-table span.switch-slider {
+        width: 63px !important;
+        margin-left: -6px;
+    }
+
+    .cms-table .switch-slider::before {
+        width: 8px;
+        height: 9px;
+    }
+
+    .cms-body.card-body {
+        overflow: scroll;
+        max-width: 470px;
+    }
+
+    .model-div {
+        min-width: 433px;
+        overflow-x: scroll;
+    }
+
+    .form-group.remap {
+        position: unset;
+        right: 0;
+    }
+
+    
+}
+
+
